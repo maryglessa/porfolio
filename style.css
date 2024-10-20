@@ -1,0 +1,726 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'armata', sans-serif;
+}
+
+
+.container {
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   
+}
+   
+/* for desktop view */
+@media screen  and (min-width: 1025px) {
+    #left-side {
+        width: 5vw;
+        background-color: #E6F5E3;
+        justify-content: start;
+
+    }
+
+    .vl {
+        border-right: 1px solid #A7D89D;
+        height: 100vh;
+        margin-left: 5.5vw;
+    }
+
+    #right-side {
+        background-color: #E6F5E3;
+        justify-content: center;  
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        width: 60vw;
+        margin-left: 10%;
+        flex-grow: 1;
+             
+    }
+
+    .text {
+        margin-left: 10vw;
+        
+        
+    }
+
+
+    .text p {
+       
+        background-color: #A7D89D;
+        text-align: center;
+        padding: 20px;
+        font-size: 2rem; 
+        margin: 1px;
+        width: 20vw;
+        color: white;
+    }
+
+
+    li {
+        color: #5A7356;
+        margin: 40px;
+        font-size: 1.5rem;
+    }
+
+    #contact-info {
+        color: #5A7356;
+        display: flex;
+        row-gap: 10px;
+        text-decoration: underline;
+        font-weight: bold;
+
+    }
+
+    #contact-info i {
+        justify-content:flex-start;
+        margin-left: -10vw; 
+
+        
+    }
+    
+    .phone {
+        margin-left: 20vw; 
+    }
+
+
+    #middle {
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;  
+        padding: 10px;
+
+    }
+
+    span {
+        font-family: 'arvo';
+    }
+    
+
+    img {
+        width: 25vw;
+        height: 50vh;
+       margin-left: 75px;
+       transform: translate(50px, 15vh);
+       position: relative;
+       z-index: 1;
+        
+    }
+
+    .border {
+        border: 2px solid #A7D89D;
+        width: 25vw;
+        height: 50vh;
+        border-radius: 60%;
+        position: relative;
+        transform: translate(50px, -35vh);
+        z-index: 0;
+
+    }
+
+
+    #aboutme {
+        word-spacing: 10px;
+        margin-left: 75px;
+        margin-top: 20px;
+        
+    }
+
+    #aboutme p {
+        transform: translate(4.5vw, -25vh);
+        font-size: 1.5vw;
+        color: #5A7356;
+    }
+
+
+    #aboutme span {
+        font-family: 'arvo';
+        font-size: 1.8vw;
+        color: #A7D89D;
+    }
+
+}
+
+
+ /* for mobile view  */
+@media screen  and (max-width: 499px) and (orientation:portrait){
+    
+    
+
+
+    #left-side {
+        width: 9.5vw;
+        height: 100vh;
+        background-color: #E6F5E3;
+        justify-content: start;
+
+    }
+    
+    .vl {
+        border-right: 1px solid #A7D89D;
+        height: 100vh;
+        margin-left:11vw;
+    }
+    
+    #middle {
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;  
+        /* padding: 10px;  */
+
+    }
+
+    span {
+        font-family: 'arvo';
+    }
+    
+
+    img {
+        width: 25vw;
+        height: 30vh;
+        margin-left: 75px;
+        transform: translate(-5vw, -.5vh);
+        position: relative;
+        z-index: 1;
+        
+    }
+
+    .border {
+        border: 2px solid #A7D89D;
+        width: 25vw;
+        height: 30vh;
+        border-radius: 60%;
+        position: relative;
+        transform: translate(-.5vw, -30vh);
+        z-index: 0;
+
+    }
+
+
+    #aboutme {
+        word-spacing: 5px;
+        margin-left: 75px;
+        margin-top: 20px;
+        
+        
+    }
+
+    #aboutme p {
+        transform: translate(4.5vw, -30vh);
+        font-size: 2.2vw;
+        color: #5A7356;
+        text-align: start;
+    }
+
+
+    #aboutme span {
+        font-family: 'arvo';
+        font-size:2vw;
+        color: #A7D89D;
+    }
+
+    
+    #right-side {
+        background-color: #E6F5E3;
+        justify-content: center;  
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        width: 95vw;
+        flex-grow: 1;
+        margin-top:  40vh;
+        margin-left: -50%;
+        height: auto;
+
+             
+    }
+
+    .text {
+        margin-left: 9vw;
+        
+        
+    }
+
+    .text p {
+       
+        background-color: #A7D89D;
+        text-align: center;
+        padding: 20px;
+        font-size: 13px; 
+        margin: 20px;
+        width: 40vw;
+        color: white;
+    }
+        
+
+
+    li {
+        color: #5A7356;
+        margin: 20px;
+        font-size: 15px;
+    }
+
+
+    #contact-info {
+        color: #5A7356;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        text-decoration: underline;
+        font-size: 11.5px;
+        margin-top: -1.5vh;
+        margin-left: 5.5vw;
+        font-weight: bold;
+
+    }
+ 
+    .email {
+        margin-right: 8px;
+        
+
+        
+    }
+    
+    .phone {
+        margin-left: 0; 
+    }
+
+}
+
+
+@media screen and  (width: 400px) and (orientation : portrait){
+   
+    #aboutme p {
+        transform: translate(18.5vw, -30vh);
+        font-size: 2.2vw;
+        color: #5A7356;
+        text-align: start;
+    }
+
+    
+   .border {
+    transform: translate( 15vw, -30vh);
+   }
+    
+    #right-side {
+        background-color: #E6F5E3;
+        justify-content: center;  
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        width: 80vw;
+        flex-grow: 1;
+        margin-top:  44vh;
+        margin-left: -35%;
+        height: auto;
+
+             
+    }
+
+
+    .text p {
+       
+        background-color: #A7D89D;
+        text-align: center;
+        padding: 10px;
+        font-size: 25px; 
+        margin: 20px;
+        width: 40vw;
+        color: white;
+    }
+        
+
+
+    li {
+        color: #5A7356;
+        margin: 20px;
+        font-size: 15px;
+    }
+
+
+    #contact-info {
+        color: #5A7356;
+        display: flex;
+        row-gap: 10px;
+        text-decoration: underline;
+        font-size: 10px;
+        font-weight: bold;
+
+    }
+
+    #contact-info i {
+        justify-content:flex-ceter;
+        margin-left: -2vw; 
+
+        
+    }
+    
+    .phone {
+        margin-left: 7.5vw; 
+    }
+
+
+
+    
+}
+   
+
+
+/* for tablet view */
+
+@media screen  and (max-width: 1024px) and (min-width: 500px) and (orientation:portrait){
+ 
+
+    
+    #left-side {
+        width: 9.5vw;
+        height: 100vh;
+        background-color: #E6F5E3;
+        justify-content: start;
+
+    }
+    
+    .vl {
+        border-right: 1px solid #A7D89D;
+        height: 100vh;
+        margin-left:11vw;
+    }
+    
+    #middle {
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;  
+        /* padding: 10px;  */
+
+    }
+
+    span {
+        font-family: 'arvo';
+    }
+    
+
+    img {
+        width: 25vw;
+        height: 30vh;
+        margin-left: 75px;
+        transform: translate(15vw, -.4vh);
+        position: relative;
+        z-index: 1;
+        
+    }
+
+    .border {
+        border: 2px solid #A7D89D;
+        width: 25vw;
+        height: 30vh;
+        border-radius: 60%;
+        position: relative;
+        transform: translate( 10vw, -30vh);
+        z-index: 0;
+
+    }
+
+
+    #aboutme {
+        word-spacing: 5px;
+        margin-left: 75px;
+        margin-top: 20px;
+        
+        
+    }
+
+    #aboutme p {
+        transform: translate(18.5vw, -30vh);
+        font-size: 2.2vw;
+        color: #5A7356;
+        text-align: start;
+    }
+
+
+    #aboutme span {
+        font-family: 'arvo';
+        font-size:2vw;
+        color: #A7D89D;
+    }
+
+    
+    #right-side {
+        background-color: #E6F5E3;
+        justify-content: center;  
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        width: 80vw;
+        flex-grow: 1;
+        margin-top:  40vh;
+        margin-left: -30%;
+        height: auto;
+
+             
+    }
+
+
+    .text p {
+       
+        background-color: #A7D89D;
+        text-align: center;
+        padding: 20px;
+        font-size: 25px; 
+        margin: 20px;
+        width: 40vw;
+        color: white;
+    }
+        
+
+
+    li {
+        color: #5A7356;
+        margin: 30px;
+        font-size: 20px;
+    }
+
+
+    #contact-info {
+        color: #5A7356;
+        display: flex;
+        row-gap: 10px;
+        text-decoration: underline;
+        font-size: 15px;
+        font-weight: bold;
+
+    }
+
+    #contact-info i {
+        justify-content:flex-ceter;
+        margin-left: -2vw; 
+
+        
+    }
+    
+    .phone {
+        margin-left: 7.5vw; 
+    }
+
+  
+
+}
+
+/* adjustment */
+@media screen and ( width:540px) and (orientation : portrait){
+    
+    #aboutme p {
+        transform: translate(18.5vw, -30vh);
+        font-size: 2.2vw;
+        color: #5A7356;
+        text-align: start;
+    }
+
+    
+   .border {
+    transform: translate( 15vw, -30vh);
+   }
+    
+    #right-side {
+        background-color: #E6F5E3;
+        justify-content: center;  
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        width: 80vw;
+        flex-grow: 1;
+        margin-top:  44vh;
+        margin-left: -35%;
+        height: auto;
+
+             
+    }
+
+
+    .text p {
+       
+        background-color: #A7D89D;
+        text-align: center;
+        padding: 10px;
+        font-size: 25px; 
+        margin: 20px;
+        width: 40vw;
+        color: white;
+    }
+        
+
+
+    li {
+        color: #5A7356;
+        margin: 20px;
+        font-size: 15px;
+    }
+
+
+    #contact-info {
+        color: #5A7356;
+        display: flex;
+        row-gap: 10px;
+        text-decoration: underline;
+        font-size: 10px;
+        font-weight: bold;
+
+    }
+
+    #contact-info i {
+        justify-content:flex-ceter;
+        margin-left: -2vw; 
+
+        
+    }
+    
+    .phone {
+        margin-left: 7.5vw; 
+    }
+
+  
+}
+
+
+/* landscape of mobile and tablet */
+@media screen  and (max-width: 1024px) and (orientation:landscape){
+   
+    #left-side {
+        width: 5vw;
+        height: 100vh;
+        background-color: #E6F5E3;
+        justify-content: start;
+
+    }
+
+    .vl {
+        border-right: 1px solid #A7D89D;
+        height: 100vh;
+        margin-left: 5.5vw;
+    }
+
+    #right-side {
+        background-color: #E6F5E3;
+        justify-content: center;  
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        width: 95vw;
+        margin-left: auto;
+        flex-grow: 1;
+        height: 100vh;
+             
+    }
+
+    .text {
+        
+        margin-right: -5vw;
+        
+        
+    }
+
+
+    .text p {
+       
+        background-color: #A7D89D;
+        text-align: center;
+        padding: 20px;
+        font-size: 15px; 
+        width: 30vw;
+        color: white;
+    }
+
+
+    li {
+        color: #5A7356;
+        margin: 15px;
+        font-size: 15px;
+    }
+
+    #contact-info {
+        color: #5A7356;
+        display: flex;
+        row-gap: 10px;
+        text-decoration: underline;
+        font-size: 10px;
+        font-weight: bold;
+
+    }
+
+    #contact-info i {
+        justify-content:flex-ceter;
+        margin-left: -2vw; 
+
+        
+    }
+    
+    .phone {
+        margin-left: 7.5vw; 
+    }
+
+  
+    #middle {
+        display: flex;
+        flex-direction: column;    
+        justify-content: center;  
+        padding: 10px;
+
+    }
+
+    span {
+        font-family: 'arvo';
+    }
+    
+
+    img {
+        width: 25vw;
+        height: 50vh;
+       margin-left: 75px;
+       transform: translate(-10vw, 15vh);
+       position: relative;
+       z-index: 1;
+        
+    }
+
+    .border {
+        border: 2px solid #A7D89D;
+        width: 25vw;
+        height: 50vh;
+        border-radius: 60%;
+        position: relative;
+        transform: translate(-5.5vw, -35vh);
+        z-index: 0;
+
+    }
+
+
+    #aboutme {
+        word-spacing: 10px;
+        margin-left: 75px;
+        margin-top: 20px;
+        
+    }
+
+    #aboutme p {
+        transform: translate(-5.5vw, -25vh);
+        font-size: 1.5vw;
+        color: #5A7356;
+    }
+
+
+    #aboutme span {
+        font-family: 'arvo';
+        font-size: 1.8vw;
+        color: #A7D89D;
+    }
+
+}
+
+
+
+
+
+
+
+
+
